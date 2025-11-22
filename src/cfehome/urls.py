@@ -20,7 +20,10 @@ from django.urls import path
 from cfehome import views
 
 urlpatterns = [
-    path('hello-world/',views.home_page_view, name='home-page-view'),
+    path('', views.home_view),
+    path('about/',views.about_view),
+    path('hello-world/',views.home_view, name='home-view'),
     path('admin/', admin.site.urls),
+
 
 ]
